@@ -1,0 +1,14 @@
+sudo: required
+
+language: node_js
+
+services:
+  - docker
+
+before_install:
+- docker pull alexeiled/docker-oracle-xe-11g
+- docker run -h "oracle" --name "oracle" -d -p 49160:22 -p 49161:1521 -p 49162:8080 alexeiled/docker-oracle-xe-11g
+- docker ps -a
+
+script:
+- 
