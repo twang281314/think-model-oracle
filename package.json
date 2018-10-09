@@ -1,0 +1,41 @@
+{
+  "name": "think-model-oracle",
+  "version": "1.0.1",
+  "description": "Oracle adapter for ThinkJS 3.x",
+  "scripts": {
+    "test": "ava",
+    "test-cov": "nyc ava test/ && nyc report --reporter=html",
+    "lint": "eslint ./lib index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twang281314/think-model-oracle.git"
+  },
+  "keywords": [
+    "thinkjs",
+    "orm",
+    "oracle",
+    "adapter",
+    "model"
+  ],
+  "author": "anytao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twang281314/think-model-oracle/issues"
+  },
+  "homepage": "https://github.com/twang281314/think-model-oracle",
+  "dependencies": {
+    "oracledb": "^3.0.0",
+    "think-debounce": "^1.0.4",
+    "think-helper": "^1.1.2",
+    "think-instance": "^1.0.1",
+    "think-model-abstract": "^1.2.4"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "eslint": "^5.6.1",
+    "mock-require": "^3.0.2",
+    "muk": "^0.5.3",
+    "nyc": "^13.0.1"
+  }
+}
