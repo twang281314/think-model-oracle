@@ -10,7 +10,18 @@ before_install:
 - docker pull alexeiled/docker-oracle-xe-11g
 - docker run -h "oracle" --name "oracle" -d -p 49160:22 -p 49161:1521 -p 49162:8080 alexeiled/docker-oracle-xe-11g
 - docker ps -a
-
+- cd /opt
+- mkdir oracle
+- cd oracle
+- git  clone https://gitee.com/anytao/Oracle-Instant-Client.git
+- cd Oracle-Instant-Client
+- unzip instantclient-basic-linux.x64-18.3.0.0.0dbru.zip 
+- unzip instantclient-sdk-linux.x64-18.3.0.0.0dbru.zip
+- mv instantclient_18_3  instantclient
+- mv instantclient /opt/oracle/instantclient
+- cd instantclient
+- sudo sh -c "echo /opt/oracle/instantclient > /etc/ld.so.conf.d/oracle-instantclient.conf"
+- sudo ldconfig
 script:
 - free -m
 - df -h
