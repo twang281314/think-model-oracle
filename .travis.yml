@@ -19,7 +19,6 @@ before_install:
 - unzip instantclient-sdk-linux.x64-18.3.0.0.0dbru.zip
 - mv instantclient_18_3  instantclient
 - mv instantclient /opt/oracle/instantclient
-- cd instantclient
 - sudo sh -c "echo /opt/oracle/instantclient > /etc/ld.so.conf.d/oracle-instantclient.conf"
 - sudo ldconfig
 script:
