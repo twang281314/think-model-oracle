@@ -22,7 +22,17 @@ before_install:
 - sudo sh -c "echo /opt/oracle/instantclient > /etc/ld.so.conf.d/oracle-instantclient.conf"
 - sudo ldconfig
 - cd twang281314/think-model-oracle
+install:
+- npm install
 script:
+- pwd
 - free -m
 - df -h
 - node testOracle.js
+
+notifications:
+  email:
+    recipients:
+    - geek@anytao.net
+    on_success: always
+    on_failure: always
