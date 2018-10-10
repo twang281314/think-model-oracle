@@ -14,7 +14,7 @@ before_install:
 - mkdir oracle
 - cd oracle
 - git clone https://gitlab.com/twang281314/oracle-instant-client.git
-- cd Oracle-Instant-Client
+- cd oracle-instant-client
 - unzip instantclient-basic-linux.x64-18.3.0.0.0dbru.zip 
 - unzip instantclient-sdk-linux.x64-18.3.0.0.0dbru.zip
 - mv instantclient_18_3  instantclient
