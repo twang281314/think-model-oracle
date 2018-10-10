@@ -21,6 +21,7 @@ before_install:
 - mv instantclient /opt/oracle/instantclient
 - sudo sh -c "echo /opt/oracle/instantclient > /etc/ld.so.conf.d/oracle-instantclient.conf"
 - sudo ldconfig
+- cd twang281314/think-model-oracle
 script:
 - free -m
 - df -h
