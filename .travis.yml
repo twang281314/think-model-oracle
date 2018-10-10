@@ -24,10 +24,11 @@ before_install:
 install:
 - npm install
 script:
-- find / -name think-model-oracle
 - pwd
 - free -m
 - df -h
+- cd /home/travis/build/twang281314/think-model-oracle
+- node testOracle.js
 
 notifications:
   email:
