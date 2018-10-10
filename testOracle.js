@@ -1,17 +1,19 @@
 var oracledb = require('oracledb');
 console.log("Oracle client library version number is " + oracledb.oracleClientVersion);
 var config = {
-  user:'ods',　　//用户名
-  password:'ods',　　//密码
+  user:'system',　　//用户名
+  password:'oracle',　　//密码
   //IP:数据库IP地址，PORT:数据库端口，SCHEMA:数据库名称
-  connectString : "192.168.30.198:1521/epdw"
+  connectString : "localhost:49161/xe"
 };
 
 oracledb.createPool(config).then((pool)=>{
     pool.getConnection(function(err, connection) {
-
-        connection.execute("select* from ODS.O_GOODS_BRAND").then((result)=>{
-           console.log(JSON.stringify(result.rows))
+        if(err){
+          console.log(err)
+        }
+        connection.execute("select * from  HR.EMPLOYEES WHERE ROWNUM<10").then((result)=>{
+           console.log(result.rows)
         })
 
     });

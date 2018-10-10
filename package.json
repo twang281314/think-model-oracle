@@ -3,8 +3,6 @@
   "version": "1.0.1",
   "description": "Oracle adapter for ThinkJS 3.x",
   "scripts": {
-    "test": "ava",
-    "test-cov": "nyc ava test/ && nyc report --reporter=html",
     "lint": "eslint ./lib index.js"
   },
   "repository": {
