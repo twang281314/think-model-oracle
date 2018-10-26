@@ -1,6 +1,6 @@
 {
   "name": "think-model-oracle",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "Oracle adapter for ThinkJS 3.x",
   "scripts": {
     "lint": "eslint ./lib index.js"
