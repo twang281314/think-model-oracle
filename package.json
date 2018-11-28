@@ -1,6 +1,6 @@
 {
   "name": "think-model-oracle",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Oracle adapter for ThinkJS 3.x",
   "scripts": {
     "lint": "eslint ./lib index.js"
@@ -35,5 +35,8 @@
     "mock-require": "^3.0.2",
     "muk": "^0.5.3",
     "nyc": "^13.0.1"
-  }
+  },
+  "__npminstall_done": "Wed Nov 28 2018 14:54:13 GMT+0800 (China Standard Time)",
+  "_from": "think-model-oracle@1.0.12",
+  "_resolved": "http://registry.npm.taobao.org/think-model-oracle/download/think-model-oracle-1.0.12.tgz"
 }
