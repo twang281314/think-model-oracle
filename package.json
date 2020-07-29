@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/twang281314/think-model-oracle",
   "dependencies": {
-    "oracledb": "^3.0.0",
+    "oracledb": "^5.0.0",
     "think-debounce": "^1.0.4",
     "think-helper": "^1.1.2",
     "think-instance": "^1.0.1",
