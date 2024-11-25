@@ -1,6 +1,6 @@
 {
   "name": "think-model-oracle",
-  "version": "1.0.19",
+  "version": "2.0.0",
   "description": "Oracle adapter for ThinkJS 3.x",
   "scripts": {
     "lint": "eslint ./lib index.js"
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/twang281314/think-model-oracle",
   "dependencies": {
-    "oracledb": "5.0.0",
+    "oracledb": "6.7.0",
     "think-debounce": "^1.0.4",
     "think-helper": "^1.1.2",
     "think-instance": "^1.0.1",
